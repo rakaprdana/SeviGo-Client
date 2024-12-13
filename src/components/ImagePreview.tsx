@@ -19,9 +19,12 @@ const ImagePreviewFromAPI: React.FC<ImagePreviewProps> = ({ image, alt }) => {
     } else {
       const fetchImage = async () => {
         try {
-          const response = await axios.get(`http://localhost:3000/${image}`, {
-            responseType: "blob",
-          });
+          const response = await axios.get(
+            `https://sevigo-api-production.up.railway.app/${image}`,
+            {
+              responseType: "blob",
+            }
+          );
           url = URL.createObjectURL(response.data);
           setImageUrl(url);
         } catch (err) {
