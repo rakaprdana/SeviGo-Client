@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Sample1",
+    "email": "Sample1@example.com",
+    "phone": "08123456789",
+    "status": "Accepted"
+  },
+  {
+    "id": 2,
+    "name": "Sample2",
+    "email": "Sample2@example.com",
+    "phone": "08129876543",
+    "status": "Rejected"
+  }
+]

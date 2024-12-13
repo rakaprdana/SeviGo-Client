@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Bagaimana cara membuat pengaduan?",
+    "answer": "Anda perlu mendaftar sebagai pengguna, masuk ke dashboard, dan mengisi formulir pengaduan di bagian 'Pengaduan Baru'."
+  },
+  {
+    "question": "Apakah saya bisa melacak status pengaduan?",
+    "answer": "Ya, Anda bisa melacak status pengaduan dari dashboard pengguna. Setiap perubahan status akan diberitahukan melalui notifikasi."
+  },
+  {
+    "question": "Berapa lama waktu respon dari admin?",
+    "answer": "Admin akan memberikan respon awal dalam waktu maksimal 2 hari setelah pengaduan diajukan."
+  },
+  {
+    "question": "Apakah pengaduan saya bersifat rahasia?",
+    "answer": "Ya, semua pengaduan yang diajukan bersifat rahasia dan hanya dapat diakses oleh pihak terkait."
+  }
+]
