@@ -33,7 +33,12 @@ const ViewFeedback: React.FC = () => {
     fetchFeedback();
   }, [feedback_id]);
 
-  if (loading) return <div>Loading...{loading}</div>;
+  if (loading)
+    return (
+      <div className="bg-orange-500 text-white p-4 w-1/5 flex justify-center items-center m-64 ml-96 text-2xl font-bold rounded-xl">
+        <span className="loading loading-spinner loading-lg"></span>
+      </div>
+    );
   if (error) return <div>Error: {error}</div>;
 
   return (

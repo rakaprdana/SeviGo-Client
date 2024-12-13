@@ -45,8 +45,8 @@ const HistoryTable = () => {
               onChange={handleSearch}
             />
           </div>
-          <div className="overflow-y-auto h-96 lg:h-[32rem]">
-            <table className="w-full text-left bg-white rounded-lg shadow-md">
+          <div className="overflow-y-auto h-96 lg:h-[28rem] rounded-lg">
+            <table className="w-full text-left bg-white shadow-md">
               <thead>
                 <tr className="sticky top-0 bg-gray-200 text-center">
                   <th className="p-2 border-b">ID Report</th>

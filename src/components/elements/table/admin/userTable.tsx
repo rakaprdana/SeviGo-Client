@@ -65,7 +65,12 @@ const Table: React.FC = () => {
     [data]
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading)
+    return (
+      <div className="bg-orange-500 text-white p-4 w-1/5 flex justify-center items-center m-64 ml-96 text-2xl font-bold rounded-xl">
+        <span className="loading loading-spinner loading-lg"></span>
+      </div>
+    );
 
   return (
     <div className="bg-gray-50 p-4 rounded-lg shadow mt-8">
