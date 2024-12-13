@@ -1,8 +1,6 @@
 import axios from "axios";
 
-const API_URL =
-  import.meta.env.VITE_API_URL ||
-  "https://sevigo-api-production.up.railway.app/api"; // Akses URL dari .env
+const API_URL = import.meta.env.VITE_API_URL; // Akses URL dari .env
 
 const api = axios.create({
   baseURL: API_URL,
