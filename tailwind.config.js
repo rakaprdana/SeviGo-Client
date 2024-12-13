@@ -1,7 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import daisyui from "daisyui";
-import textshadow from "tailwindcss-textshadow";
-
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -16,8 +13,13 @@ export default {
       },
     },
   },
-  plugins: [daisyui, textshadow],
+  plugins: [
+    require("daisyui"),
+    require("tailwindcss-textshadow")
+
+  ],
   daisyui: {
     themes: ["light"],
+
   },
 };
