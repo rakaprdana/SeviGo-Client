@@ -19,12 +19,10 @@ const ImagePreviewFromAPI: React.FC<ImagePreviewProps> = ({ image, alt }) => {
     } else {
       const fetchImage = async () => {
         try {
-          const response = await axios.get(
-            `https://sevigo-api-production.up.railway.app/${image}`,
-            {
-              responseType: "blob",
-            }
-          );
+          const ASSET_URL = import.meta.env.VITE_ASSET_URL;
+          const response = await axios.get(`${ASSET_URL}/${image}`, {
+            responseType: "blob",
+          });
           url = URL.createObjectURL(response.data);
           setImageUrl(url);
         } catch (err) {
@@ -45,8 +43,8 @@ const ImagePreviewFromAPI: React.FC<ImagePreviewProps> = ({ image, alt }) => {
 
   if (!image || !imageUrl) {
     return (
-      <div className="flex justify-center items-center w-[16rem] h-[16rem] rounded-full">
-        <span className="loading loading-spinner loading-lg"></span>
+      <div className="flex justify-center items-center w-[16rem] h-[16rem] rounded-full bg-gray-200">
+        <i className="bx bx-user text-gray-500 text-9xl"></i>
       </div>
     );
   }

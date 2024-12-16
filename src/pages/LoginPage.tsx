@@ -3,12 +3,10 @@ import backgroundImage from "../assets/image/login-bg.jpg";
 import "boxicons/css/boxicons.min.css";
 import logoSevigo from "../assets/image/logo-SeviGO.png";
 import { Link, useNavigate } from "react-router-dom";
-// import api from "../services/api"; // Import API
 import ErrorMessage from "../components/elements/forms/ErrorMessage"; // Import ErrorMessage
 import { useAuth } from "../middlewares/AuthContext";
-import { AxiosError } from "axios";
+import axios, { AxiosError } from "axios";
 import TextInput from "../components/elements/modal/input/TextInput";
-import api from "../services/api";
 
 const LoginPage: React.FC = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -38,7 +36,8 @@ const LoginPage: React.FC = () => {
     setLoading(true); // Set loading true saat mengirimkan form
     try {
       // Mengirim request ke endpoint login pada backend
-      const response = await api.post("/users/login", formData);
+      const API_URL = import.meta.env.VITE_API_URL;
+      const response = await axios.post(`${API_URL}/users/login`, formData);
       const token = response.data.data.token;
       localStorage.setItem("token", token);
       login(token); // Memanggil fungsi login dari context AuthProvider

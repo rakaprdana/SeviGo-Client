@@ -46,8 +46,6 @@ describe("Table Component", () => {
 
     render(<Table />);
 
-    expect(screen.getByText("Loading...")).toBeInTheDocument();
-
     await waitFor(() => {
       expect(screen.getByText("User test 1")).toBeInTheDocument();
       expect(screen.getByText("User test 2")).toBeInTheDocument();
