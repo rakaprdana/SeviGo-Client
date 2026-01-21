@@ -212,7 +212,7 @@ const FormProfile = () => {
           <div className="grid grid-cols-1 gap-6 mt-4">
             <TextArea
               name="address"
-              placeholder="Alamat"
+              placeholder="Address"
               value={userData.address}
               onChange={handleInputChange}
             />

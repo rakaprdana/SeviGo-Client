@@ -21,13 +21,13 @@ const DashboardUser = () => {
           <Link to="/dashboard/new-report">
             <div className="bg-slate-50 flex items-center py-6 px-8 lg:px-12 text-xl space-x-4 rounded-lg shadow-md hover:shadow-lg transition-all">
               <i className="bx bxs-notepad text-orange-500 text-4xl" />
-              <h1>Buat Pengaduan</h1>
+              <h1>Create New Complaint</h1>
             </div>
           </Link>
           <Link to="/history">
             <div className="bg-slate-50 flex items-center py-6 px-8 lg:px-12 text-xl space-x-4 rounded-lg shadow-md hover:shadow-lg transition-all">
               <i className="bx bx-history text-orange-500 text-4xl" />
-              <h1>Riwayat Pengaduan</h1>
+              <h1>History Complaints</h1>
             </div>
           </Link>
         </div>

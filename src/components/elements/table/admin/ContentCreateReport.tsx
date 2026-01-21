@@ -115,7 +115,7 @@ const CreateReport: React.FC = () => {
                   value={feedback.title}
                   onChange={handleInputChange}
                   className="input input-bordered w-full h-8 lg:h-10 text-sm sm:text-base"
-                  placeholder="Masukkan Judul.."
+                  placeholder="Input the title"
                 />
               </div>
 

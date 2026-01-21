@@ -76,8 +76,8 @@ const ComplaintDetail: React.FC = () => {
   return (
     <div className="p-6 flex-1 bg-white">
       <PageHeader
-        title="Detail Complaint"
-        description="Detail Complaint From User"
+        title="Complaint Detail"
+        description="Complaint Detail From User"
       />
       <Card title={"Detail Pengaduan"}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">

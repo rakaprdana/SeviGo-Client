@@ -33,7 +33,7 @@ const HistoryTable = () => {
     <>
       <div className="w-[22rem] lg:w-full">
         <div className="flex items-center pb-8">
-          <h1 className="py-4 ml-4 text-3xl">Riwayat Pelaporan</h1>
+          <h1 className="py-4 ml-4 text-3xl">Report History</h1>
           <hr className="border border-black w-2/3 " />
         </div>
         <div className="bg-gray-50 p-4 rounded-lg shadow">

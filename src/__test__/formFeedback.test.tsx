@@ -40,10 +40,8 @@ describe("CreateReport Component", () => {
     );
 
     expect(screen.getByText("Create Feedback")).toBeInTheDocument();
-    expect(screen.getByPlaceholderText("Masukkan Judul..")).toBeInTheDocument();
-    expect(
-      screen.getByPlaceholderText("Tulis Deskripsi..")
-    ).toBeInTheDocument();
+    expect(screen.getByPlaceholderText("Input the title")).toBeInTheDocument();
+    expect(screen.getByPlaceholderText("Description")).toBeInTheDocument();
     expect(screen.getByText("SUBMIT")).toBeInTheDocument();
   });
 
@@ -58,13 +56,13 @@ describe("CreateReport Component", () => {
     );
 
     const titleInput = screen.getByPlaceholderText(
-      "Masukkan Judul.."
+      "Input the title"
     ) as HTMLInputElement;
     const descriptionInput = screen.getByPlaceholderText(
-      "Tulis Deskripsi.."
+      "Your report details"
     ) as HTMLTextAreaElement;
     const dateInput = screen.getByPlaceholderText(
-      "Pilih Tanggal.."
+      "Location"
     ) as HTMLInputElement;
 
     fireEvent.change(titleInput, { target: { value: "Test Title" } });
@@ -122,13 +120,13 @@ describe("CreateReport Component", () => {
       </BrowserRouter>
     );
 
-    fireEvent.change(screen.getByPlaceholderText("Masukkan Judul.."), {
+    fireEvent.change(screen.getByPlaceholderText("Input the title"), {
       target: { value: "Test Title" },
     });
     fireEvent.change(screen.getByPlaceholderText("Pilih Tanggal.."), {
       target: { value: "2023-12-31" },
     });
-    fireEvent.change(screen.getByPlaceholderText("Tulis Deskripsi.."), {
+    fireEvent.change(screen.getByPlaceholderText("Description"), {
       target: { value: "This is a test description" },
     });
 
@@ -153,10 +151,10 @@ describe("CreateReport Component", () => {
       </BrowserRouter>
     );
 
-    fireEvent.change(screen.getByPlaceholderText("Masukkan Judul.."), {
+    fireEvent.change(screen.getByPlaceholderText("Input the title"), {
       target: { value: "Test Title" },
     });
-    fireEvent.change(screen.getByPlaceholderText("Tulis Deskripsi.."), {
+    fireEvent.change(screen.getByPlaceholderText("Description"), {
       target: { value: "Test Description" },
     });
     fireEvent.change(screen.getByPlaceholderText("Pilih Tanggal.."), {

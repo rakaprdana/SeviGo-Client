@@ -77,12 +77,12 @@ const DashboardAdmin: React.FC = () => {
       {/* Bagian Statistik Pengguna dan Laporan */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         <StatsCard
-          title="Total Pengguna"
+          title="Users"
           icon={<FaUsers />}
           endpoint="/statistics/users"
         />
         <StatsCard
-          title="Total Laporan Masuk"
+          title="Total Reports Received"
           icon={<FaFileAlt />}
           endpoint="/statistics/complaints"
         />
@@ -91,17 +91,17 @@ const DashboardAdmin: React.FC = () => {
       {/* Bagian Statistik Status Laporan */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
         <StatsCard
-          title="Laporan Di Terima"
+          title="Accepted Reports"
           icon={<AiOutlineCheckCircle />}
           endpoint="/statistics/complaints-finished"
         />
         <StatsCard
-          title="Laporan Di Tolak"
+          title="Rejected Reports"
           icon={<AiOutlineCloseCircle />}
           endpoint="/statistics/complaints-rejected"
         />
         <StatsCard
-          title="Laporan Di Proses"
+          title="Reports in Progress"
           icon={<IoMdTimer />}
           endpoint="/statistics/complaints-processing"
         />

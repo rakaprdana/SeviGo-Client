@@ -28,7 +28,7 @@ const AdminSideBar = () => {
             icon="bx bxs-user"
           />
           <LinkSideBar
-            label="Kategori"
+            label="Categories"
             to="/admin/categories"
             icon="bx bx-category"
           />

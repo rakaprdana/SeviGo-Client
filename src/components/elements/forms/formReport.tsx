@@ -149,7 +149,7 @@ const FormReport = () => {
         <div className="flex flex-col space-y-4 w-full lg:w-1/2">
           <TextInput
             name="title"
-            placeholder="Judul laporan anda.."
+            placeholder="Input the title"
             value={complaint.title}
             onChange={handleInputChange}
             type="text"
@@ -158,7 +158,7 @@ const FormReport = () => {
           />
           <TextArea
             name="content"
-            placeholder="Isi laporan anda.."
+            placeholder="Your report details"
             value={complaint.content}
             onChange={handleInputChange}
           />
@@ -172,7 +172,7 @@ const FormReport = () => {
           />
           <TextInput
             name="location"
-            placeholder="Masukkan lokasi kejadian"
+            placeholder="Location"
             value={complaint.location}
             onChange={handleInputChange}
             type="text"
@@ -186,7 +186,7 @@ const FormReport = () => {
             className="input input-bordered w-full h-8 lg:h-10 text-sm sm:text-base"
           >
             <option disabled value="">
-              Pilih Kategori Laporan
+              Choose categories
             </option>
             {categories.map((category) => (
               <option key={category._id} value={category._id}>
@@ -196,7 +196,7 @@ const FormReport = () => {
           </select>
         </div>
         <label className="lg:w-1/2 flex flex-col items-center cursor-pointer">
-          <span className="text-gray-600 mb-2 mt-2">Upload Bukti</span>
+          <span className="text-gray-600 mb-2 mt-2">Upload evidence</span>
           <div
             className={`flex flex-col items-center justify-center space-x-2 border border-gray-300 rounded-md ${
               previewEvidence ? "p-1" : "p-16"

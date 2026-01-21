@@ -21,11 +21,15 @@ const UserSidebar = () => {
           />
           <LinkSideBar label="Profile" to="/profile" icon="bx bxs-user" />
           <LinkSideBar
-            label="Pengaduan Baru"
+            label="New Complaint"
             to="/dashboard/new-report"
             icon="bx bxs-notepad"
           />
-          <LinkSideBar label="History" to="/history" icon="bx bx-history" />
+          <LinkSideBar
+            label="History Complaint"
+            to="/history"
+            icon="bx bx-history"
+          />
         </div>
         <button
           onClick={handleLogOut}
